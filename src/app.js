@@ -29,10 +29,14 @@ function createDressing(event) {
   let chosenVinegar = vinegars[randomNumberTwo];
   let chosenFlavour = flavours[randomNumberThree];
 
-  alert(chosenOil + chosenVinegar + chosenFlavour);
+  let oilSelector = document.querySelector("#oilName");
+  oilSelector.innerHTML = chosenOil;
 
-  //let recipe = document.querySelector("h2");
-  //quote.innerHTML = insult;
+  let vinegarSelector = document.querySelector("#vinegarName");
+  vinegarSelector.innerHTML = chosenVinegar;
+
+  let flavourSelector = document.querySelector("#flavourName");
+  flavourSelector.innerHTML = chosenFlavour;
 }
 
 let recipeButton = document.querySelector("#submit");
